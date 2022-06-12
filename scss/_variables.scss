@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+@mixin size($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
 $color-inicio: #000000cb;
+$color-inicio-texto: #ffffff;
 $color1: #b80000;
 

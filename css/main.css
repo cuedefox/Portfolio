@@ -160,11 +160,13 @@ address {
   line-height: inherit; }
 
 ol,
-ul {
+ul,
+ol {
   padding-left: 2rem; }
 
 ol,
 ul,
+ol,
 dl {
   margin-top: 0;
   margin-bottom: 1rem; }
@@ -172,7 +174,12 @@ dl {
 ol ol,
 ul ul,
 ol ul,
-ul ol {
+ul ol,
+ol ol,
+ol ul,
+ol ol,
+ul ol,
+ol ol {
   margin-bottom: 0; }
 
 dt {
@@ -8851,32 +8858,66 @@ textarea.form-control-lg {
 a {
   text-decoration: none; }
 
-ul, ol {
+
+ul,
+ol {
   list-style: none; }
 
 nav {
   background-color: #000000cb !important; }
   nav a {
-    color: white !important; }
+    color: #ffffff !important; }
+    nav a span {
+      font-weight: bolder;
+      font-size: 1.3em;
+      color: #b80000; }
+
+.dropdown-menu {
+  background-color: #000000cb !important; }
+
+.dropdown-divider {
+  background-color: #ffffff; }
 
 #inicio {
   background-image: url(../img/hands-typing-code-on-laptop.jpg);
   background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
   display: flex;
-  flex-flow: wrap;
-  justify-content: center;
   align-items: center;
-  padding: 4em; }
+  justify-content: center; }
+  #inicio div {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center; }
   #inicio img {
-    width: 14em;
-    height: 14em;
-    border-radius: 180em; }
+    width: 230px;
+    height: 230px;
+    border-radius: 180px;
+    padding: 1em; }
 
 h1 {
-  color: white; }
+  font-size: 2em;
+  color: #ffffff;
+  text-align: center;
+  padding: 1em; }
   h1 span {
     color: #b80000; }
 
 .contacto img {
   width: 3em;
   height: 3em; }
+
+@media screen and (min-width: 425px) {
+  #inicio img {
+    width: 270px;
+    height: 270px; } }
+
+@media screen and (min-width: 1440px) {
+  #inicio img {
+    width: 350px;
+    height: 350px; }
+  h1 {
+    font-size: 2.5em; } }
