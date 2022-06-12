@@ -1,0 +1,24 @@
+#inicio {
+    background-image: url(../img/hands-typing-code-on-laptop.jpg);
+    display: flex;
+    flex-flow: wrap;
+    img {
+        width: 20em;
+        height: 20em;
+        border-radius: 180em;
+    }    
+}
+h1 {
+    color: white;
+    span {
+        color: $color1;
+    }
+}
+header {
+    nav {
+        background-color: #000000cb;
+    }
+}    
+.texto-nav {
+    color: white !important;
+}
