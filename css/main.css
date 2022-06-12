@@ -8848,22 +8848,35 @@ textarea.form-control-lg {
   margin: 0;
   padding: 0; }
 
+a {
+  text-decoration: none; }
+
+ul, ol {
+  list-style: none; }
+
+nav {
+  background-color: #000000cb !important; }
+  nav a {
+    color: white !important; }
+
 #inicio {
   background-image: url(../img/hands-typing-code-on-laptop.jpg);
+  background-attachment: fixed;
   display: flex;
-  flex-flow: wrap; }
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4em; }
   #inicio img {
-    width: 20em;
-    height: 20em;
+    width: 14em;
+    height: 14em;
     border-radius: 180em; }
 
 h1 {
   color: white; }
   h1 span {
-    color: #002fff; }
+    color: #b80000; }
 
-header nav {
-  background-color: #000000cb; }
-
-.texto-nav {
-  color: white !important; }
+.contacto img {
+  width: 3em;
+  height: 3em; }

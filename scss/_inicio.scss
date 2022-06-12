@@ -1,10 +1,20 @@
+nav {
+    background-color: $color-inicio !important;
+    a {
+        color: white !important;
+    }
+}
 #inicio {
     background-image: url(../img/hands-typing-code-on-laptop.jpg);
+    background-attachment: fixed;
     display: flex;
     flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 4em;
     img {
-        width: 20em;
-        height: 20em;
+        width: 14em;
+        height: 14em;
         border-radius: 180em;
     }    
 }
@@ -13,12 +23,4 @@ h1 {
     span {
         color: $color1;
     }
-}
-header {
-    nav {
-        background-color: #000000cb;
-    }
-}    
-.texto-nav {
-    color: white !important;
 }
