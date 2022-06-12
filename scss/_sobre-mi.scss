@@ -1,0 +1,39 @@
+#sobre-mi {
+    text-align: center;
+    h2 {
+        padding: 1em;
+    }
+    h3 {
+        @extend h2;
+    }
+    p {
+        margin: 1.4em;
+    }
+    button {
+        @extend p;
+    }
+    ul {
+        display: flex;
+        flex-flow: wrap;
+    }
+    li {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.sobre-mi-info {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.sobre-mi-habilidades {
+    img {
+        @include size(3.5em, 3.5em)
+    }
+    p {
+        font-weight: bolder;
+    }
+}

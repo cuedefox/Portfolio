@@ -102,7 +102,7 @@ hr {
   border-top: 1px solid;
   opacity: 0.25; }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, #sobre-mi h3, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -116,11 +116,11 @@ h1, .h1 {
   h1, .h1 {
     font-size: 2.5rem; } }
 
-h2, .h2 {
+h2, #sobre-mi h3, .h2 {
   font-size: calc(1.325rem + 0.9vw); }
 
 @media (min-width: 1200px) {
-  h2, .h2 {
+  h2, #sobre-mi h3, .h2 {
     font-size: 2rem; } }
 
 h3, .h3 {
@@ -143,7 +143,7 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem; }
 
-p {
+p, #sobre-mi button {
   margin-top: 0;
   margin-bottom: 1rem; }
 
@@ -8867,6 +8867,26 @@ iframe {
   width: 100px;
   height: 240px; }
 
+h2, #sobre-mi h3 {
+  color: #b80000;
+  font-family: 'Montserrat', sans-serif; }
+
+h3 {
+  color: #b80000;
+  font-family: 'Montserrat', sans-serif; }
+
+h4 {
+  color: #b80000;
+  font-family: 'Montserrat', sans-serif; }
+
+h5 {
+  color: #b80000;
+  font-family: 'Montserrat', sans-serif; }
+
+h6 {
+  color: #b80000;
+  font-family: 'Montserrat', sans-serif; }
+
 nav {
   background-color: #000000cb !important; }
   nav a {
@@ -8903,18 +8923,50 @@ nav {
     padding: 1em; }
 
 h1 {
-  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.7em;
+  font-weight: bold;
   color: #ffffff;
   text-align: center;
   padding: 1em; }
   h1 span {
     color: #b80000; }
 
+#sobre-mi {
+  text-align: center; }
+  #sobre-mi h2, #sobre-mi h3 {
+    padding: 1em; }
+  #sobre-mi p, #sobre-mi button {
+    margin: 1.4em; }
+  #sobre-mi ul, #sobre-mi ol {
+    display: flex;
+    flex-flow: wrap; }
+  #sobre-mi li {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center; }
+
+.sobre-mi-info {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center; }
+
+.sobre-mi-habilidades img {
+  width: 3.5em;
+  height: 3.5em; }
+
+.sobre-mi-habilidades p, .sobre-mi-habilidades #sobre-mi button, #sobre-mi .sobre-mi-habilidades button {
+  font-weight: bolder; }
+
 .contacto img {
   width: 3em;
   height: 3em; }
 
 @media screen and (min-width: 425px) {
+  #inicio h1 {
+    font-size: 2em; }
   #inicio img {
     width: 270px;
     height: 270px; } }

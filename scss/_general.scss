@@ -10,3 +10,9 @@ ol {
 iframe {
     @include size(100px, 240px)
 }
+@for $h from 2 through 6 {
+    h#{$h} {
+        color: $color1;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
