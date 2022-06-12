@@ -8863,6 +8863,10 @@ ul,
 ol {
   list-style: none; }
 
+iframe {
+  width: 100vh;
+  height: 240px; }
+
 nav {
   background-color: #000000cb !important; }
   nav a {
