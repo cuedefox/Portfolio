@@ -17,6 +17,16 @@
     }
 }
 @media screen and (min-width:768px) {
+    #sobre-mi {
+        h2 {
+            text-align: start;
+        }
+    }
+    .sobre-mi-info {
+        p {
+            text-align: start;
+        }
+    }
     .sobre-mi-wrapper {
         display: grid;
         grid-template-areas: 
@@ -30,7 +40,11 @@
     }
 }
 @media screen and (min-width:1024px) {
-    
+    .sobre-mi-info {
+        h3 {
+            text-align: start;
+        }
+    }
 }
 @media screen and (min-width:1440px) {
     #inicio {

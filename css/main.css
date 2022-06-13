@@ -102,7 +102,7 @@ hr {
   border-top: 1px solid;
   opacity: 0.25; }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, #sobre-mi h3, .h2, h1, .h1 {
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -116,11 +116,11 @@ h1, .h1 {
   h1, .h1 {
     font-size: 2.5rem; } }
 
-h2, #sobre-mi h3, .h2 {
+h2, .h2 {
   font-size: calc(1.325rem + 0.9vw); }
 
 @media (min-width: 1200px) {
-  h2, #sobre-mi h3, .h2 {
+  h2, .h2 {
     font-size: 2rem; } }
 
 h3, .h3 {
@@ -8867,7 +8867,7 @@ iframe {
   width: 100px;
   height: 240px; }
 
-h2, #sobre-mi h3 {
+h2 {
   color: #b80000;
   font-family: 'Montserrat', sans-serif; }
 
@@ -8935,7 +8935,12 @@ h1 {
 
 #sobre-mi {
   text-align: center; }
-  #sobre-mi h2, #sobre-mi h3 {
+  #sobre-mi h2 {
+    padding: 1em;
+    padding-top: 2em;
+    font-size: 2.5em;
+    font-weight: bold; }
+  #sobre-mi h3 {
     padding: 1em; }
   #sobre-mi p, #sobre-mi button {
     margin: 1.4em; }
@@ -8994,6 +8999,10 @@ habilidad-6 {
     grid-template-areas: "habilidad-1 habilidad-2 habilidad-3" "habilidad-4 habilidad-5 habilidad-6"; } }
 
 @media screen and (min-width: 768px) {
+  #sobre-mi h2 {
+    text-align: start; }
+  .sobre-mi-info p, .sobre-mi-info #sobre-mi button, #sobre-mi .sobre-mi-info button {
+    text-align: start; }
   .sobre-mi-wrapper {
     display: grid;
     grid-template-areas: "info habilidades"; }
@@ -9001,6 +9010,10 @@ habilidad-6 {
     grid-area: info; }
   sobre-mi-habilidades {
     grid-area: habilidades; } }
+
+@media screen and (min-width: 1024px) {
+  .sobre-mi-info h3 {
+    text-align: start; } }
 
 @media screen and (min-width: 1440px) {
   #inicio img {
