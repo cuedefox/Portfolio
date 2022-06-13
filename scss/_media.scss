@@ -7,6 +7,27 @@
             @include size(270px, 270px)
         }
     }
+    #sobre-mi {
+        ul {
+            grid-template-areas: 
+            "habilidad-1 habilidad-2 habilidad-3"
+            "habilidad-4 habilidad-5 habilidad-6"
+            ;
+        }
+    }
+}
+@media screen and (min-width:768px) {
+    .sobre-mi-wrapper {
+        display: grid;
+        grid-template-areas: 
+        "info habilidades"
+        ;
+    }
+    @each $area, $areag in $sobre-mi {
+        sobre-mi-#{$area} {
+        grid-area: #{$areag}
+        }
+    }
 }
 @media screen and (min-width:1024px) {
     

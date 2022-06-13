@@ -13,27 +13,31 @@
         @extend p;
     }
     ul {
-        display: flex;
-        flex-flow: wrap;
+        padding: 0em !important;
+        display: grid;
+        grid-template-areas: 
+        "habilidad-1 habilidad-2"
+        "habilidad-3 habilidad-4"
+        "habilidad-5 habilidad-6"
+        ;
     }
     li {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        justify-content: center;
+        @include flex(column, center, center)
     }
 }
 .sobre-mi-info {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
+    @include flex(column, center, center)
 }
 .sobre-mi-habilidades {
     img {
-        @include size(3.5em, 3.5em)
+        @include size(4.5em, 4.5em)
     }
     p {
         font-weight: bolder;
+    }
+}
+@for $hab from 1 through 6 {
+    habilidad-#{$hab} {
+        grid-area: habilidad-#{$hab};
     }
 }

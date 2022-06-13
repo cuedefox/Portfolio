@@ -8909,6 +8909,7 @@ nav {
   background-position: center;
   min-height: 100vh;
   display: flex;
+  flex-flow: wrap;
   align-items: center;
   justify-content: center; }
   #inicio div {
@@ -8939,8 +8940,9 @@ h1 {
   #sobre-mi p, #sobre-mi button {
     margin: 1.4em; }
   #sobre-mi ul, #sobre-mi ol {
-    display: flex;
-    flex-flow: wrap; }
+    padding: 0em !important;
+    display: grid;
+    grid-template-areas: "habilidad-1 habilidad-2" "habilidad-3 habilidad-4" "habilidad-5 habilidad-6"; }
   #sobre-mi li {
     display: flex;
     flex-flow: column;
@@ -8954,11 +8956,29 @@ h1 {
   justify-content: center; }
 
 .sobre-mi-habilidades img {
-  width: 3.5em;
-  height: 3.5em; }
+  width: 4.5em;
+  height: 4.5em; }
 
 .sobre-mi-habilidades p, .sobre-mi-habilidades #sobre-mi button, #sobre-mi .sobre-mi-habilidades button {
   font-weight: bolder; }
+
+habilidad-1 {
+  grid-area: habilidad-1; }
+
+habilidad-2 {
+  grid-area: habilidad-2; }
+
+habilidad-3 {
+  grid-area: habilidad-3; }
+
+habilidad-4 {
+  grid-area: habilidad-4; }
+
+habilidad-5 {
+  grid-area: habilidad-5; }
+
+habilidad-6 {
+  grid-area: habilidad-6; }
 
 .contacto img {
   width: 3em;
@@ -8969,7 +8989,18 @@ h1 {
     font-size: 2em; }
   #inicio img {
     width: 270px;
-    height: 270px; } }
+    height: 270px; }
+  #sobre-mi ul, #sobre-mi ol {
+    grid-template-areas: "habilidad-1 habilidad-2 habilidad-3" "habilidad-4 habilidad-5 habilidad-6"; } }
+
+@media screen and (min-width: 768px) {
+  .sobre-mi-wrapper {
+    display: grid;
+    grid-template-areas: "info habilidades"; }
+  sobre-mi-info {
+    grid-area: info; }
+  sobre-mi-habilidades {
+    grid-area: habilidades; } }
 
 @media screen and (min-width: 1440px) {
   #inicio img {

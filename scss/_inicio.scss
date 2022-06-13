@@ -21,14 +21,9 @@ nav {
     background-size: cover;
     background-position: center;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex(wrap, center, center);
     div {
-        display: flex;
-        flex-flow: wrap;
-        align-items: center;
-        justify-content: center;
+        @include flex(wrap, center, center);
     }
     img {
         @include size(230px, 230px);
