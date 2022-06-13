@@ -8943,7 +8943,8 @@ h1 {
   #sobre-mi h3 {
     padding: 1em; }
   #sobre-mi p, #sobre-mi button {
-    margin: 1.4em; }
+    margin: 1.4em;
+    font-size: 1.2em; }
   #sobre-mi ul, #sobre-mi ol {
     padding: 0em !important;
     display: grid;
@@ -8958,7 +8959,8 @@ h1 {
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  letter-spacing: 2px; }
 
 .sobre-mi-habilidades img {
   width: 4.5em;

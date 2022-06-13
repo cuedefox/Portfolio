@@ -11,6 +11,7 @@
     }
     p {
         margin: 1.4em;
+        font-size: 1.2em;
     }
     button {
         @extend p;
@@ -29,7 +30,8 @@
     }
 }
 .sobre-mi-info {
-    @include flex(column, center, center)
+    @include flex(column, center, center);
+    letter-spacing: 2px;
 }
 .sobre-mi-habilidades {
     img {
