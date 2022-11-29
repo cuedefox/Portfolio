@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+$color1: #181818;
+$color2: #8758FF;
+$color3: #5CB8E4;
+$color4: #F2F2F2;
+
+@mixin size($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
