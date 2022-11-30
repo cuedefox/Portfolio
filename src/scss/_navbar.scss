@@ -1,7 +1,8 @@
 .nav-bar {
     top: 0;
     background-color: $color1;
-    position: sticky;
+    position: fixed;
+    width: 100vw;
     div {
         display: flex;
         justify-content: space-between;
@@ -10,12 +11,13 @@
     }
 }
 .nav-logo {
+    font-family: mon;
     color: $color4;
     font-size: 1.7em;
     font-weight: bold;
     margin: 0.3em 0em;
     span {
-        color: $color2;
+        color: $color3;
     }
 }
 nav {
@@ -26,6 +28,7 @@ nav {
         li {
             margin: 0em 0.5em;
             a {
+                font-family: mon;
                 color: $color2;
                 font-size: 1.1em;
             }

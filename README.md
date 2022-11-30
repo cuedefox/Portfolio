@@ -7,3 +7,6 @@ secciones:
 - Habilidades
 - Trabajo
 - Contacto
+
+ideas:
+- h1 animacion tecleada

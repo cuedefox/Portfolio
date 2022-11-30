@@ -1,5 +1,19 @@
 header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     img {
-        @include size(100%, 100vh);
+        @include size(20em, 20em);
+        border-radius: 15em;
+        margin: 1em;
+    }
+}
+h1 {
+    font-family: mon;
+    margin: 1em;
+    color: $color4;
+    span {
+        color: $color2;
     }
 }

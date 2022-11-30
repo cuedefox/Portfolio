@@ -14,3 +14,8 @@ $color4: #F2F2F2;
     width: $ancho;
     height: $alto;
 }
+
+@font-face {
+    font-family: mon;
+    src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf');
+}
