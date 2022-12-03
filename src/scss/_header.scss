@@ -17,6 +17,8 @@ h1 {
     margin: 1em;
     color: $color4;
     span {
-        color: $color2;
+        background: -webkit-linear-gradient($color3, $color2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }

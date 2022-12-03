@@ -94,7 +94,9 @@ h1 {
   margin: 1em;
   color: #F2F2F2; }
   h1 span {
-    color: #8758FF; }
+    background: -webkit-linear-gradient(#5CB8E4, #8758FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 #about-me h2 {
   margin: 1em; }
@@ -168,15 +170,36 @@ footer {
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-template-areas: "redes cel-mail" "cop cop"; }
+  grid-template-areas: "cel-mail redes" "cop cop"; }
 
 .redes {
-  grid-area: redes; }
+  grid-area: redes;
+  margin: 1em; }
 
 .cel-mail {
-  grid-area: cel-mail; }
+  grid-area: cel-mail;
+  margin: 1em;
+  display: flex;
+  flex-flow: column;
+  justify-content: left;
+  align-items: left; }
 
 .copy {
   grid-area: cop;
   color: #F2F2F2;
   margin: 1em; }
+
+.contact-item {
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1em; }
+  .contact-item img {
+    width: 2em;
+    height: 2em;
+    margin: 0.2em; }
+  .contact-item p {
+    margin: 0.2em;
+    color: #8758FF;
+    font-weight: bold; }

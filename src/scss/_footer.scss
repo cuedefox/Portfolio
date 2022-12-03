@@ -4,21 +4,44 @@ footer {
     align-items: center;
     justify-content: center;
     grid-template-areas: 
-    "redes cel-mail"
+    "cel-mail redes"
     "cop cop"
     ;
 }
 
 .redes {
     grid-area: redes;
+    margin: 1em;
 }
 
 .cel-mail {
     grid-area: cel-mail;
+    margin: 1em;
+    display: flex;
+    flex-flow: column;
+    justify-content: left;
+    align-items: left;
 }
 
 .copy {
     grid-area: cop;
     color: $color4;
     margin: 1em;
+}
+
+.contact-item {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    img {
+        @include size(2em, 2em);
+        margin: 0.2em;
+    }
+    p {
+        margin: 0.2em;
+        color: $color2;
+        font-weight: bold;
+    }
 }

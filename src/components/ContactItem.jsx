@@ -1,10 +1,9 @@
 import React from "react";
 
-const ContactItem = (img, info) => {
-    const cargarImagen = require.context("../assets/img", true);
+const ContactItem = ({img, info}) => {
     
     return <div className="contact-item">
-        <img src={cargarImagen(`./${img}`)} alt={info} />
+        <img src={img} alt={info} />
         <p>{info}</p>
     </div>
 }
