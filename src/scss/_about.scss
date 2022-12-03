@@ -1,0 +1,21 @@
+#about-me {
+    @extend #skills;
+    h2 {
+        margin: 1em;
+    }
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+            margin: 1em;
+            color: $color1;
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+        img {
+            @include size(20em, 20em);
+            margin: 1em;
+        }
+    }
+}

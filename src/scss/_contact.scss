@@ -1,0 +1,35 @@
+#contact {
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo"
+    "mail medios"
+    ;
+    justify-content: center;
+}
+
+.titulo-contacto {
+    display: flex;
+    flex-flow: column nowrap;
+    grid-area: titulo;
+    align-items: center;
+    justify-content: center;
+    p {
+        color: $color3;
+        font-weight: bold;
+        font-size: 2em;
+    }
+}
+
+.mail {
+    grid-area: mail;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.medios-de-contacto {
+    grid-area: medios;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

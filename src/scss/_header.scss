@@ -3,12 +3,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-attachment: fixed;
+    background-size: auto;
     img {
         @include size(20em, 20em);
         border-radius: 15em;
         margin: 1em;
     }
 }
+
 h1 {
     font-family: mon;
     margin: 1em;

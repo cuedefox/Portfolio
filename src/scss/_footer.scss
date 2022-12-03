@@ -1,0 +1,24 @@
+footer {
+    background-color: $color1;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas: 
+    "redes cel-mail"
+    "cop cop"
+    ;
+}
+
+.redes {
+    grid-area: redes;
+}
+
+.cel-mail {
+    grid-area: cel-mail;
+}
+
+.copy {
+    grid-area: cop;
+    color: $color4;
+    margin: 1em;
+}

@@ -8,6 +8,31 @@
   font-family: mon;
   src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf"); }
 
+@font-face {
+  font-family: yan;
+  src: url("./assets/fonts/Yantramanav-Light.ttf"); }
+
+h2 {
+  color: #8758FF;
+  font-family: mon; }
+
+h3, h4 {
+  color: #8758FF;
+  font-family: mon; }
+
+h4 {
+  color: #8758FF;
+  font-family: mon; }
+
+h2 {
+  font-size: 2.5em; }
+
+h3, h4 {
+  font-size: 1.7em; }
+
+p {
+  font-family: yan; }
+
 .nav-bar {
   top: 0;
   background-color: #181818;
@@ -38,12 +63,26 @@ nav ul {
       font-family: mon;
       color: #8758FF;
       font-size: 1.1em; }
+    nav ul li div {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      nav ul li div img {
+        width: 2em;
+        height: 2em; }
+
+.li-idioma {
+  margin: 0;
+  padding: 0; }
 
 header {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  background-attachment: fixed;
+  background-size: auto; }
   header img {
     width: 20em;
     height: 20em;
@@ -56,3 +95,88 @@ h1 {
   color: #F2F2F2; }
   h1 span {
     color: #8758FF; }
+
+#about-me h2 {
+  margin: 1em; }
+
+#about-me div {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  #about-me div p {
+    margin: 1em;
+    color: #181818;
+    font-size: 1.5em;
+    font-weight: 500; }
+  #about-me div img {
+    width: 20em;
+    height: 20em;
+    margin: 1em; }
+
+#skills, #about-me, #work {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 2em; }
+
+.skills-lists-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .skills-lists-container div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1em; }
+    .skills-lists-container div div {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+
+#contact {
+  display: grid;
+  grid-template-areas: "titulo titulo" "mail medios";
+  justify-content: center; }
+
+.titulo-contacto {
+  display: flex;
+  flex-flow: column nowrap;
+  grid-area: titulo;
+  align-items: center;
+  justify-content: center; }
+  .titulo-contacto p {
+    color: #5CB8E4;
+    font-weight: bold;
+    font-size: 2em; }
+
+.mail {
+  grid-area: mail;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.medios-de-contacto {
+  grid-area: medios;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+footer {
+  background-color: #181818;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-areas: "redes cel-mail" "cop cop"; }
+
+.redes {
+  grid-area: redes; }
+
+.cel-mail {
+  grid-area: cel-mail; }
+
+.copy {
+  grid-area: cop;
+  color: #F2F2F2;
+  margin: 1em; }

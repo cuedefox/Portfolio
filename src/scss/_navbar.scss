@@ -10,6 +10,7 @@
         margin: 0em 1em;
     }
 }
+
 .nav-logo {
     font-family: mon;
     color: $color4;
@@ -20,6 +21,7 @@
         color: $color3;
     }
 }
+
 nav {
     ul {
         display: flex;
@@ -32,6 +34,20 @@ nav {
                 color: $color2;
                 font-size: 1.1em;
             }
+            div {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    @include size(2em, 2em);
+                }
+            }
         }
     }
+}
+
+.li-idioma {
+    margin: 0;
+    padding: 0;
 }

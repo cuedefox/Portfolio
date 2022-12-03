@@ -19,3 +19,31 @@ $color4: #F2F2F2;
     font-family: mon;
     src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf');
 }
+
+@font-face {
+    font-family: yan;
+    src: url('./assets/fonts/Yantramanav-Light.ttf');
+}
+
+@for $i from 2 through 4 {
+    h#{$i} {
+        color: $color2;
+        font-family: mon;
+    }
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.7em;
+}
+
+h4 {
+    @extend h3;
+}
+
+p {
+    font-family: yan;
+}
