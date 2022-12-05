@@ -1,8 +1,7 @@
 footer {
     background-color: $color1;
     display: grid;
-    align-items: center;
-    justify-content: center;
+    place-items: center;
     grid-template-areas: 
     "cel-mail redes"
     "cop cop"
@@ -12,6 +11,10 @@ footer {
 .redes {
     grid-area: redes;
     margin: 1em;
+    img {
+        @include size(2em, 2em);
+        margin: 1em;
+    }
 }
 
 .cel-mail {
@@ -19,7 +22,7 @@ footer {
     margin: 1em;
     display: flex;
     flex-flow: column;
-    justify-content: left;
+    justify-content: flex-start;
     align-items: left;
 }
 
@@ -32,9 +35,8 @@ footer {
 .contact-item {
     display: flex;
     flex-flow: nowrap;
-    justify-content: center;
     align-items: center;
-    margin: 1em;
+    margin: .4em;
     img {
         @include size(2em, 2em);
         margin: 0.2em;
@@ -42,6 +44,5 @@ footer {
     p {
         margin: 0.2em;
         color: $color2;
-        font-weight: bold;
     }
 }

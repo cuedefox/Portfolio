@@ -9,8 +9,8 @@
   src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf"); }
 
 @font-face {
-  font-family: yan;
-  src: url("./assets/fonts/Yantramanav-Light.ttf"); }
+  font-family: rob;
+  src: url("./assets/fonts/Roboto.ttf"); }
 
 h2 {
   color: #8758FF;
@@ -24,14 +24,21 @@ h4 {
   color: #8758FF;
   font-family: mon; }
 
+h5 {
+  color: #8758FF;
+  font-family: mon; }
+
 h2 {
   font-size: 2.5em; }
 
 h3, h4 {
   font-size: 1.7em; }
 
+h5 {
+  font-size: 1em; }
+
 p {
-  font-family: yan; }
+  font-family: rob; }
 
 .nav-bar {
   top: 0;
@@ -120,24 +127,29 @@ h1 {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  margin: 2em; }
+  margin: 4em 2em; }
 
-.skills-lists-container {
+.skills-container {
+  margin: 3em;
   display: flex;
+  flex-flow: wrap;
   align-items: center;
   justify-content: center; }
-  .skills-lists-container div {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
+
+.skill {
+  margin: 2em;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center; }
+  .skill img {
+    width: 8em;
+    height: 8em; }
+  .skill h5 {
     margin: 1em; }
-    .skills-lists-container div div {
-      display: flex;
-      align-items: center;
-      justify-content: center; }
 
 #contact {
+  margin: 4em 2em;
   display: grid;
   grid-template-areas: "titulo titulo" "mail medios";
   justify-content: center; }
@@ -151,7 +163,8 @@ h1 {
   .titulo-contacto p {
     color: #5CB8E4;
     font-weight: bold;
-    font-size: 2em; }
+    font-size: 2em;
+    font-family: mon; }
 
 .mail {
   grid-area: mail;
@@ -168,20 +181,23 @@ h1 {
 footer {
   background-color: #181818;
   display: grid;
-  align-items: center;
-  justify-content: center;
+  place-items: center;
   grid-template-areas: "cel-mail redes" "cop cop"; }
 
 .redes {
   grid-area: redes;
   margin: 1em; }
+  .redes img {
+    width: 2em;
+    height: 2em;
+    margin: 1em; }
 
 .cel-mail {
   grid-area: cel-mail;
   margin: 1em;
   display: flex;
   flex-flow: column;
-  justify-content: left;
+  justify-content: flex-start;
   align-items: left; }
 
 .copy {
@@ -192,14 +208,12 @@ footer {
 .contact-item {
   display: flex;
   flex-flow: nowrap;
-  justify-content: center;
   align-items: center;
-  margin: 1em; }
+  margin: .4em; }
   .contact-item img {
     width: 2em;
     height: 2em;
     margin: 0.2em; }
   .contact-item p {
     margin: 0.2em;
-    color: #8758FF;
-    font-weight: bold; }
+    color: #8758FF; }

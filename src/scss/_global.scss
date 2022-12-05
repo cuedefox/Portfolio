@@ -21,11 +21,11 @@ $color4: #F2F2F2;
 }
 
 @font-face {
-    font-family: yan;
-    src: url('./assets/fonts/Yantramanav-Light.ttf');
+    font-family: rob;
+    src: url('./assets/fonts/Roboto.ttf');
 }
 
-@for $i from 2 through 4 {
+@for $i from 2 through 5 {
     h#{$i} {
         color: $color2;
         font-family: mon;
@@ -44,6 +44,10 @@ h4 {
     @extend h3;
 }
 
+h5 {
+    font-size: 1em;
+}
+
 p {
-    font-family: yan;
+    font-family: rob;
 }
