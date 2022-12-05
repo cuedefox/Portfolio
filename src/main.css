@@ -183,6 +183,12 @@ h1 {
   h1 {
     font-size: 1.5em; } }
 
+@media (orientation: landscape) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center; } }
+
 #about-me h2 {
   margin: 1em; }
 
