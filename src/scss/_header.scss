@@ -36,11 +36,28 @@ h1 {
     h1 {
         font-size: 1.5em;
     }
+    header {
+        img {
+            @include size(10em, 10em);
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    h1 {
+        font-size: 1em;
+    }
+    header {
+        img {
+            @include size(10em, 10em);
+        }
+    }
 }
 
 @media (orientation: landscape) {
     header {
         display: flex;
+        flex-flow: row nowrap;
         align-items: center;
         justify-content: center;
     }
