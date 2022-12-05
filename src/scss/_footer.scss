@@ -22,7 +22,7 @@ footer {
     margin: 1em;
     display: flex;
     flex-flow: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: left;
 }
 
@@ -44,5 +44,29 @@ footer {
     p {
         margin: 0.2em;
         color: $color2;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    footer {
+        justify-content: center;
+        align-items: center;
+        grid-template-areas: 
+        "redes"
+        "cel-mail"
+        "cop"
+        ;
+    }
+    .cel-mail {
+        align-items: center;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:600px) {
+    footer {
+        p {
+            font-size: .7em;
+        }
     }
 }

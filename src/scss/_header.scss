@@ -22,3 +22,18 @@ h1 {
         -webkit-text-fill-color: transparent;
     }
 }
+
+@media screen and (max-width:1000px) {
+    header {
+        flex-flow: column nowrap;
+        img {
+            @include size(15em, 15em);
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+}
