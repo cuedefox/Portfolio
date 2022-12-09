@@ -46,7 +46,8 @@ p {
   top: 0;
   background-color: #181818;
   position: fixed;
-  width: 100vw; }
+  width: 100vw;
+  z-index: 3; }
   .nav-bar div {
     display: flex;
     justify-content: space-between;
@@ -71,7 +72,10 @@ nav ul {
     nav ul li a {
       font-family: mon;
       color: #8758FF;
-      font-size: 1.1em; }
+      font-size: 1.1em;
+      transition: .3s ease-in-out; }
+      nav ul li a:hover {
+        color: #5CB8E4; }
     nav ul li div {
       cursor: pointer;
       display: flex;
@@ -207,11 +211,42 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center; }
-  #about-me div p {
-    margin: 1em;
-    color: #181818;
-    font-size: 1.5em;
-    font-weight: 500; }
+  #about-me div div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center; }
+    #about-me div div p {
+      margin: 1em;
+      color: #181818;
+      font-size: 1.5em;
+      font-weight: 500; }
+    #about-me div div button {
+      margin: 1em;
+      width: 160px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      margin: 20px;
+      height: 55px;
+      text-align: center;
+      border: none;
+      background-size: 300% 100%;
+      border-radius: 50px;
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+      background-image: linear-gradient(to right, #667eea, #764ba2, #6b8dd6, #8e37d7);
+      box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75); }
+      #about-me div div button:hover {
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out; }
+      #about-me div div button:focus {
+        outline: none; }
   #about-me div img {
     width: 20em;
     height: 20em;
@@ -221,12 +256,12 @@ h1 {
   #about-me div {
     flex-flow: column nowrap; } }
 
-#skills, #about-me, #work {
+#skills, #about-me {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  margin: 4em 2em; }
+  margin: 4em 0em; }
 
 .skills-container {
   margin: 3em;
@@ -246,6 +281,86 @@ h1 {
     height: 8em; }
   .skill h5 {
     margin: 1em; }
+
+.certificates {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 2em; }
+
+.certificate {
+  height: 22em;
+  margin: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: .5em;
+  overflow: hidden;
+  box-shadow: 0px 0px 29px -14px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 29px -14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 29px -14px rgba(0, 0, 0, 0.75); }
+  .certificate h5 {
+    font-size: 1.5em;
+    max-width: 10em;
+    justify-self: center;
+    text-align: center; }
+  .certificate img {
+    width: 15em;
+    top: 0; }
+  .certificate div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0em; }
+    .certificate div img {
+      width: 2.2em;
+      height: 2.2em;
+      border-radius: 10em; }
+    .certificate div a {
+      margin: 0em .5em; }
+      .certificate div a button {
+        padding: 10px 25px;
+        font-family: rob;
+        font-weight: 500;
+        background: transparent;
+        outline: none !important;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        border: 2px solid #8758FF;
+        z-index: 1;
+        color: #181818; }
+        .certificate div a button::after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 0;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          background: #8758FF;
+          transition: all 0.3s ease; }
+        .certificate div a button:hover {
+          color: #F2F2F2; }
+        .certificate div a button:hover::after {
+          top: auto;
+          bottom: 0;
+          height: 100%; }
+
+#work {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed; }
+  #work h2 {
+    margin: 1em 0em; }
+  #work h3, #work h4 {
+    margin: 1em;
+    color: #5CB8E4; }
 
 #contact {
   margin: 4em 2em;

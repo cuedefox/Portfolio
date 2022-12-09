@@ -4,6 +4,7 @@
     background-color: $color1;
     position: fixed;
     width: 100vw;
+    z-index: 3;
     div {
         display: flex;
         justify-content: space-between;
@@ -34,6 +35,10 @@ nav {
                 font-family: mon;
                 color: $color2;
                 font-size: 1.1em;
+                transition: .3s ease-in-out;
+                &:hover {
+                    color: $color3;
+                }
             }
             div {
                 cursor: pointer;

@@ -1,6 +1,8 @@
 import React from "react";
 import skills from "../db/skills";
+import certificates from "../db/certificates";
 import SkillItem from "./SkillItem";
+import CertificateItem from "./CertificateItem";
 
 const Skills = () => {
     return <div id="skills">
@@ -12,9 +14,13 @@ const Skills = () => {
                 ))
             }
         </div>
-        <h3>Certificados</h3>
+        <h3>Estudios</h3>
         <div className="certificates">
-            
+            {
+                certificates.map(item => (
+                    <CertificateItem key={`certificate-${item.id}`} item={item} />
+                ))
+            }
         </div>
     </div>
 }
