@@ -1,5 +1,5 @@
 import React from "react";
-import back from '../assets/img/back1.png';
+import back from '../assets/img/back2.png';
 
 const Work = () => {
     return <div id="work" style={{ backgroundImage: `url(${back})`}}>

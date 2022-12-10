@@ -355,7 +355,8 @@ h1 {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-size: cover; }
   #work h2 {
     margin: 1em 0em; }
   #work h3, #work h4 {
