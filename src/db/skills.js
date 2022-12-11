@@ -15,7 +15,8 @@ const skills = [
     {id: 14, title: "WEBPACK", description: "asdasfasda", img: "webpack-original.svg"},
     {id: 15, title: "TRELLO", description: "sadasdadasd", img: "trello-plain.svg"},
     {id: 16, title: "MYSQL", description: "sadasdadasd", img: "mysql-original-wordmark.svg"},
-    {id: 17, title: "MARIA DB", description: "sadasdadasd", img: "mariadb.svg"}
+    {id: 17, title: "MARIA DB", description: "sadasdadasd", img: "mariadb.svg"},
+    {id: 17, title: "SQLITE", description: "sadasdadasd", img: "sqlite-original.svg"},
 ]
 
 export default skills;
