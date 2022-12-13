@@ -1,5 +1,5 @@
 #contact {
-    margin: 4em 2em;
+    margin: 2em 0em;
     display: grid;
     grid-template-areas: 
     "titulo titulo"
@@ -14,6 +14,7 @@
     grid-area: titulo;
     align-items: center;
     justify-content: center;
+    margin: 1em;
     p {
         color: $color3;
         font-weight: bold;
@@ -25,13 +26,79 @@
 .mail {
     grid-area: mail;
     display: flex;
-    align-items: center;
+    flex-flow: column nowrap;
+    align-items: flex-start;
     justify-content: center;
+    margin: 2em 4em;
+    form {
+        margin: 1em 0em;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        justify-content: center;
+        input {
+            @include size(30em, 2em);
+            margin: 1em 0em;
+            border: 1px $color2 solid;
+            padding: 0.5em;
+        }
+        textarea {
+            @extend input;
+            height: 10em;
+            resize: none;
+        }
+        .enviar-mail {
+            @include size(10em, 3em);
+            cursor: pointer;
+            &:hover {
+
+            }
+        }
+    }
 }
 
 .medios-de-contacto {
     grid-area: medios;
     display: flex;
-    align-items: center;
+    flex-flow: column nowrap;
+    align-items: flex-start;
     justify-content: center;
+    margin: 2em 4em;
+    p {
+        margin: 1em 0em;
+    }
+    div {
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #contact {
+        grid-template-areas: 
+        "titulo"
+        "medios"
+        "mail"
+        ;
+        align-items: center;
+        justify-content: center;
+    }
+    .mail {
+        align-items: center;
+        justify-content: center;
+        form {
+            align-items: center;
+        }
+    }
+    .medios-de-contacto {
+        align-items: center;
+        justify-content: center;
+    }
+    .titulo-contacto {
+        h2 {
+            font-size: 2em;
+        }
+        p {
+            font-size: 1.5em;
+        }
+    }
 }

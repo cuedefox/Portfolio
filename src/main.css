@@ -364,7 +364,7 @@ h1 {
     color: #5CB8E4; }
 
 #contact {
-  margin: 4em 2em;
+  margin: 2em 0em;
   display: grid;
   grid-template-areas: "titulo titulo" "mail medios";
   justify-content: center; }
@@ -374,7 +374,8 @@ h1 {
   flex-flow: column nowrap;
   grid-area: titulo;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin: 1em; }
   .titulo-contacto p {
     color: #5CB8E4;
     font-weight: bold;
@@ -384,14 +385,59 @@ h1 {
 .mail {
   grid-area: mail;
   display: flex;
-  align-items: center;
-  justify-content: center; }
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 2em 4em; }
+  .mail form {
+    margin: 1em 0em;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center; }
+    .mail form input, .mail form textarea {
+      width: 30em;
+      height: 2em;
+      margin: 1em 0em;
+      border: 1px #8758FF solid;
+      padding: 0.5em; }
+    .mail form textarea {
+      height: 10em;
+      resize: none; }
+    .mail form .enviar-mail {
+      width: 10em;
+      height: 3em;
+      cursor: pointer; }
 
 .medios-de-contacto {
   grid-area: medios;
   display: flex;
-  align-items: center;
-  justify-content: center; }
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 2em 4em; }
+  .medios-de-contacto p {
+    margin: 1em 0em; }
+  .medios-de-contacto div {
+    margin-bottom: 2em; }
+
+@media screen and (max-width: 1000px) {
+  #contact {
+    grid-template-areas: "titulo" "medios" "mail";
+    align-items: center;
+    justify-content: center; }
+  .mail {
+    align-items: center;
+    justify-content: center; }
+    .mail form {
+      align-items: center; }
+  .medios-de-contacto {
+    align-items: center;
+    justify-content: center; }
+  .titulo-contacto h2 {
+    font-size: 2em; }
+  .titulo-contacto p {
+    font-size: 1.5em; } }
 
 footer {
   background-color: #181818;

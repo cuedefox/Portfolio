@@ -5,7 +5,7 @@ const CertificateItem = ({item}) => {
 
     return <div className="certificate">
         <img src={cargarImagen(`./${item.img}`)} alt={`Certificado de ${item.title}`} />
-        <h5>{item.title}</h5>
+        <h5>{item.titleEs}</h5>
         <div>
             <img src={cargarImagen(`./${item.institution}.png`)} alt={`Logo de ${item.institution}`} />
             <a href={item.link} target="_blank" rel="noreferrer">

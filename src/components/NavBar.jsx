@@ -1,4 +1,5 @@
-import { React, useState } from "react";
+import { React, useState, useContext } from "react";
+import { Language } from "../contexts/Language";
 import en from '../assets/img/reino-unido.png';
 import es from '../assets/img/espana.png';
 
@@ -9,6 +10,8 @@ const NavBar = () => {
         setMobileMenu(!mobileMenu);
     };
 
+    const {languageEn, setLanguageEn} = useContext(Language);
+
     return <div className="nav-bar">
         <div>
             <p className="nav-logo">
@@ -16,12 +19,12 @@ const NavBar = () => {
             </p>
             <nav>
                 <ul className={mobileMenu ? "menu-items show" : "menu-items"}>
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about-me">Sobre Mi</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#work">Trabajo</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                    <li className="li-idioma"><div><img src={en} alt="boton idioma" /></div></li>
+                    <li><a href="#header">{languageEn ? 'Home' : 'Inicio'}</a></li>
+                    <li><a href="#about-me">{languageEn ? 'About Me' : 'Sobre Mi'}</a></li>
+                    <li><a href="#skills">{languageEn ? 'Skills' : 'Habilidades'}</a></li>
+                    <li><a href="#work">{languageEn ? 'Work' : 'Trabajo'}</a></li>
+                    <li><a href="#contact">{languageEn ? 'Contact' : 'Contacto'}</a></li>
+                    <li className="li-idioma"><div onClick={() => {setLanguageEn(!languageEn)}}><img src={languageEn ? es : en} alt="boton idioma" /></div></li>
                 </ul>
                 <div className="menu-bars" onClick={desplegarMenu}>
                     <span className={mobileMenu ? "activelinea1-menu-bar" : "linea1-menu-bar"}></span>
