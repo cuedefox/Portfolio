@@ -1,13 +1,31 @@
-import { React, useRef } from "react";
+import { React, useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+    const [alertErr, setAlertErr] = useState(false);
+    const [alertSend, setAlertSend] = useState(false);
+    const [name, setName] = useState('');
+    const [mail, setMail] = useState('');
+    const [mess, setMess] = useState('');
     const form = useRef();
 
+    const clearForm = () => {
+        setName('');
+        setMail('');
+        setMess('');
+    }
+
     const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs.sendForm('service_kts9vbb', 'template_7qmzs2i', form.current, '4TFTGvoWJqrbr7cey')
+        e.preventDefault();
+        if(name === '' || mail === '' || mess === '' ) {
+            setAlertSend(false);
+            setAlertErr(true);
+        } else {
+            setAlertErr(false);
+            emailjs.sendForm('service_kts9vbb', 'template_7qmzs2i', form.current, '4TFTGvoWJqrbr7cey');
+            setAlertSend(true);
+            clearForm();
+        }
     };
 
     return <div id="contact">
@@ -18,9 +36,10 @@ const Contact = () => {
         <div className="mail">
             <h3>Enviame un Mensaje</h3>
             <form ref={form} onSubmit={sendEmail}>
-                <input type="text" name="user_name" placeholder="Escriba aqui su nombre" />
-                <input type="email" name="user_email" placeholder="Escriba aqui su email" />
-                <textarea name="message" placeholder="Como puedo ayudarte?" className="mensaje-mail" />
+                <input type="text" name="user_name" placeholder="Escriba aqui su nombre" onChange={e => setName(e.target.value)} value={name} />
+                <input type="email" name="user_email" placeholder="Escriba aqui su email" onChange={e => setMail(e.target.value)} value={mail} />
+                <textarea name="message" placeholder="¿Como puedo ayudarte?" className="mensaje-mail" onChange={e => setMess(e.target.value)} value={mess} />
+                {alertErr ? <p className="form-alert-err">Debe completar todo los campos para enviar.</p> : alertSend ? <p className="form-alert-send">Mensaje enviado!</p> : false}
                 <input type="submit" value="Enviar" className="enviar-mail" />
             </form>
         </div>

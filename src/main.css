@@ -439,6 +439,14 @@ h1 {
   .titulo-contacto p {
     font-size: 1.5em; } }
 
+.form-alert-err {
+  color: red;
+  font-weight: bold; }
+
+.form-alert-send {
+  color: green;
+  font-weight: bold; }
+
 footer {
   background-color: #181818;
   display: grid;
