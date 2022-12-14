@@ -6,6 +6,7 @@
     "mail medios"
     ;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .titulo-contacto {
@@ -14,7 +15,7 @@
     grid-area: titulo;
     align-items: center;
     justify-content: center;
-    margin: 1em;
+    margin: 1em 1em 4em 1em;
     p {
         color: $color3;
         font-weight: bold;
@@ -48,16 +49,42 @@
             resize: none;
         }
         .enviar-mail {
-            @include size(10em, 3em);
+            width: 160px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
             cursor: pointer;
+            height: 55px;
+            text-align:center;
+            border: none;
+            background-size: 300% 100%;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+            background-image: linear-gradient(
+                to right,
+                #667eea,
+                #764ba2,
+                #6b8dd6,
+                #8e37d7
+              );
+            box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
             &:hover {
-
+                background-position: 100% 0;
+                moz-transition: all .4s ease-in-out;
+                -o-transition: all .4s ease-in-out;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+            }
+            &:focus{
+                outline: none;
             }
         }
     }
 }
 
 .medios-de-contacto {
+    width: 20em;
     grid-area: medios;
     display: flex;
     flex-flow: column nowrap;
@@ -69,6 +96,7 @@
     }
     div {
         margin-bottom: 2em;
+        margin-top: 1em;
     }
 }
 

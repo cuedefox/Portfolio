@@ -1,4 +1,5 @@
-import { React, useRef, useState } from "react";
+import { React, useRef, useState, useContext } from "react";
+import { Language } from "../contexts/Language";
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -8,6 +9,7 @@ const Contact = () => {
     const [mail, setMail] = useState('');
     const [mess, setMess] = useState('');
     const form = useRef();
+    const {languageEn} = useContext(Language);
 
     const clearForm = () => {
         setName('');
@@ -30,11 +32,11 @@ const Contact = () => {
 
     return <div id="contact">
         <div className="titulo-contacto">
-            <h2>¿Interesado en mis servicios?</h2>
-            <p>Envie su consulta</p>
+            <h2>{languageEn ? '' : '¿Interesado en mis servicios?'}</h2>
+            <p>{languageEn ? '' : 'Envie su consulta'}</p>
         </div>
         <div className="mail">
-            <h3>Enviame un Mensaje</h3>
+            <h3>{languageEn ? '' : 'Enviame un Mensaje'}</h3>
             <form ref={form} onSubmit={sendEmail}>
                 <input type="text" name="user_name" placeholder="Escriba aqui su nombre" onChange={e => setName(e.target.value)} value={name} />
                 <input type="email" name="user_email" placeholder="Escriba aqui su email" onChange={e => setMail(e.target.value)} value={mail} />

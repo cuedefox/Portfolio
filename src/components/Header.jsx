@@ -4,10 +4,10 @@ import back from '../assets/img/back1.png';
 import perfil from '../assets/img/rodrigo-vergara.JPG';
 
 const Header = () => {
-    const {LanguageEn} = useContext(Language);
+    const {languageEn} = useContext(Language);
 
     return <header id="header" style={{ backgroundImage: `url(${back})`}}>
-        {LanguageEn ? 
+        {languageEn ? 
         <h1>Hi!, im <span>Rodrigo Vergara</span>,
         <br /><span>Full Stack</span> developer.</h1>
         :

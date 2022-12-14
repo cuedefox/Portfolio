@@ -367,7 +367,8 @@ h1 {
   margin: 2em 0em;
   display: grid;
   grid-template-areas: "titulo titulo" "mail medios";
-  justify-content: center; }
+  justify-content: center;
+  align-items: flex-start; }
 
 .titulo-contacto {
   display: flex;
@@ -375,7 +376,7 @@ h1 {
   grid-area: titulo;
   align-items: center;
   justify-content: center;
-  margin: 1em; }
+  margin: 1em 1em 4em 1em; }
   .titulo-contacto p {
     color: #5CB8E4;
     font-weight: bold;
@@ -405,11 +406,31 @@ h1 {
       height: 10em;
       resize: none; }
     .mail form .enviar-mail {
-      width: 10em;
-      height: 3em;
-      cursor: pointer; }
+      width: 160px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      height: 55px;
+      text-align: center;
+      border: none;
+      background-size: 300% 100%;
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+      background-image: linear-gradient(to right, #667eea, #764ba2, #6b8dd6, #8e37d7);
+      box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75); }
+      .mail form .enviar-mail:hover {
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out; }
+      .mail form .enviar-mail:focus {
+        outline: none; }
 
 .medios-de-contacto {
+  width: 20em;
   grid-area: medios;
   display: flex;
   flex-flow: column nowrap;
@@ -419,7 +440,8 @@ h1 {
   .medios-de-contacto p {
     margin: 1em 0em; }
   .medios-de-contacto div {
-    margin-bottom: 2em; }
+    margin-bottom: 2em;
+    margin-top: 1em; }
 
 @media screen and (max-width: 1000px) {
   #contact {

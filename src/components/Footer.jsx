@@ -1,4 +1,5 @@
-import React from "react";
+import { React, useContext } from "react";
+import { Language } from "../contexts/Language";
 import ContactItem from "./ContactItem";
 import phone from '../assets/img/icons/phone.svg';
 import envelope from '../assets/img/icons/envelope.svg';
@@ -8,6 +9,8 @@ import github from '../assets/img/icons/github.svg';
 import instagram from '../assets/img/icons/instagram.svg';
 
 const Footer = () => {
+    const {languageEn} = useContext(Language);
+
     return <footer>
         <div className="cel-mail">
             <ContactItem img={phone} info={'(+54) 11 3241-7239'} />
@@ -27,7 +30,7 @@ const Footer = () => {
                 <img src={instagram} alt="Instagram" />
             </a>
         </div>
-        <p className="copy">&copy;2022 Rodrigo Vergara - Desarrollador Full Stack</p>
+        <p className="copy">&copy;2022-2023 Rodrigo Vergara - {languageEn ? 'Full Stack Developer' : 'Desarrollador Full Stack'}</p>
     </footer>
 }
 

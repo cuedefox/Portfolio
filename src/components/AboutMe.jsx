@@ -1,16 +1,26 @@
-import React from "react";
+import { React, useContext } from "react";
+import { Language } from "../contexts/Language";
 import avatar from '../assets/img/avatar-back.svg'
 
 const AboutMe = () => {
+    const {languageEn} = useContext(Language);
+
     return <div id="about-me">
-        <h2>Sobre Mi</h2>
+        <h2>{languageEn ? 'About Me' : 'Sobre Mi'}</h2>
         <div>
             <img src={avatar} alt="Dibujo De Rodrigo" />
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quia at 
-                dolorem deleniti, ad ipsam quae nesciunt quam reiciendis harum incidunt debitis, 
-                numquam quaerat eius deserunt possimus officia quod omnis!</p>
-                <button>Descargar CV</button>
+                {
+                    languageEn ? 
+                    <p>Lorem Englishum ipsum dolor sit amet consectetur adipisicing elit. Impedit, quia at 
+                    dolorem deleniti, ad ipsam quae nesciunt quam reiciendis harum incidunt debitis, 
+                    numquam quaerat eius deserunt possimus officia quod omnis!</p>
+                    :
+                    <p>Lorem Spanishum ipsum dolor sit amet consectetur adipisicing elit. Impedit, quia at 
+                    dolorem deleniti, ad ipsam quae nesciunt quam reiciendis harum incidunt debitis, 
+                    numquam quaerat eius deserunt possimus officia quod omnis!</p>
+                }
+                <button>{languageEn ? 'Download CV' : 'Descargar CV'}</button>
             </div>
 
         </div>
