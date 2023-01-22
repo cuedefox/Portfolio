@@ -1,6 +1,7 @@
 import { React, useContext } from "react";
 import { Language } from "../contexts/Language";
-import avatar from '../assets/img/avatar-back.svg'
+import avatar from '../assets/img/avatar-back.svg';
+import cv from '../assets/cv/Vergara-Rodrigo-cv.pdf';
 
 const AboutMe = () => {
     const {languageEn} = useContext(Language);
@@ -20,7 +21,7 @@ const AboutMe = () => {
                     dolorem deleniti, ad ipsam quae nesciunt quam reiciendis harum incidunt debitis, 
                     numquam quaerat eius deserunt possimus officia quod omnis!</p>
                 }
-                <button>{languageEn ? 'Download CV' : 'Descargar CV'}</button>
+                <a href={cv} download><button>{languageEn ? 'Download CV' : 'Descargar CV'}</button></a>
             </div>
 
         </div>
