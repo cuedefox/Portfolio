@@ -1,7 +1,7 @@
 import { React, useContext } from "react";
 import { Language } from "../contexts/Language";
-import skills from "../db/skills";
-import certificates from "../db/certificates";
+import skills from "../db/skills.json";
+import certificates from "../db/certificates.json";
 import SkillItem from "./SkillItem";
 import CertificateItem from "./CertificateItem";
 

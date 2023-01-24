@@ -8,7 +8,7 @@ const SkillItem = ({item}) => {
     return <div className="skill">
         <img src={cargarImagen(`./${item.img}`)} alt={item.title} />
         <h5>{item.title}</h5>
-        <p>{item.description}</p>
+        <p>{languageEn ? item.descriptionEn : item.description}</p>
     </div>
 }
 

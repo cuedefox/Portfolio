@@ -1,0 +1,21 @@
+[
+    {"id": 1, "title": "HTML", "descriptionEn": "asasas","description": "aserejedesdadasd", "img": "html5-original.svg"},
+    {"id": 2, "title": "CSS", "descriptionEn": "asasas","description": "asdasdasdasdasd", "img": "css3-original.svg"},
+    {"id": 3, "title": "JAVASCRIPT", "descriptionEn": "asasas","description": "asdafsafdasd", "img": "javascript-original.svg"},
+    {"id": 4, "title": "REACT JS", "descriptionEn": "asasas","description": "asdasdasd", "img": "react-original.svg"},
+    {"id": 5, "title": "PYTHON", "descriptionEn": "asasas","description": "asdsadasdasd", "img": "python-original.svg"},
+    {"id": 6, "title": "TYPESCRIPT", "descriptionEn": "asasas","description": "asdasdasd", "img": "typescript-original.svg"},
+    {"id": 7, "title": "SASS", "descriptionEn": "asasas","description": "asdasdasdas", "img": "sass-original.svg"},
+    {"id": 8, "title": "NODE JS", "descriptionEn": "asasas","description": "asdasdfgd", "img": "nodejs-original.svg"},
+    {"id": 9, "title": "EXPRESS JS", "descriptionEn": "asasas","description": "asdasdasdasd", "img": "express-original.svg"},
+    {"id": 10, "title": "BOOTSTRAP", "descriptionEn": "asasas","description": "fasfdasfasf", "img": "bootstrap-original.svg"},
+    {"id": 11, "title": "GIT", "descriptionEn": "asasas","description": "asdasdasdas", "img": "git-original.svg"},
+    {"id": 12, "title": "NPM", "descriptionEn": "asasas","description": "asdsafasdads", "img": "npm-original-wordmark.svg"},
+    {"id": 13, "title": "HANDLEBARS", "descriptionEn": "asasas","description": "asdasfsad", "img": "handlebars-original.svg"},
+    {"id": 14, "title": "WEBPACK", "descriptionEn": "asasas","description": "asdasfasda", "img": "webpack-original.svg"},
+    {"id": 15, "title": "TRELLO", "descriptionEn": "asasas","description": "sadasdadasd", "img": "trello-plain.svg"},
+    {"id": 16, "title": "MYSQL", "descriptionEn": "asasas","description": "sadasdadasd", "img": "mysql-original-wordmark.svg"},
+    {"id": 17, "title": "MARIA DB", "descriptionEn": "asasas","description": "sadasdadasd", "img": "mariadb.svg"},
+    {"id": 18, "title": "SQLITE", "descriptionEn": "asasas","description": "sadasdadasd", "img": "sqlite-original.svg"},
+    {"id": 19, "title": "MONGODB", "descriptionEn": "asasas","description": "sadasdadasd", "img": "mongodb-original.svg"}
+]
