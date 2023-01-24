@@ -2,7 +2,7 @@ import { React, useContext } from "react";
 import { Language } from "../contexts/Language";
 import services from '../db/services.json';
 import back from '../assets/img/back2.png';
-import ServiceItem from "./ServiceItem";
+import ServiceItem from "../items/ServiceItem";
 
 const Work = () => {
     const {languageEn} = useContext(Language);

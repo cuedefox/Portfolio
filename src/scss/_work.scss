@@ -19,12 +19,23 @@
     align-items: center;
     justify-content: center;
     div {
-        
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: center;
     }
 }
 .service {
+    @include size(30em, 30em);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
     img {
         @include size(5em, 5em);
+        margin: 1em;
     }
     h5 {
         font-size: 2em;

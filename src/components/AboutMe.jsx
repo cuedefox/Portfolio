@@ -13,18 +13,17 @@ const AboutMe = () => {
             <div>
                 {
                     languageEn ? 
-                    <p>Lorem Englishum ipsum dolor sit amet consectetur adipisicing elit. Impedit, quia at 
-                    dolorem deleniti, ad ipsam quae nesciunt quam reiciendis harum incidunt debitis, 
-                    numquam quaerat eius deserunt possimus officia quod omnis!</p>
+                    <p>I consider myself a person who is passionate about computer science and logic programming.
+                    Always willing to learn something new and easily adaptable.
+                    I like to contribute to my work environment being harmonious and relaxed.</p>
                     :
-                    <p>Lorem Spanishum ipsum dolor sit amet consectetur adipisicing elit. Impedit, quia at 
-                    dolorem deleniti, ad ipsam quae nesciunt quam reiciendis harum incidunt debitis, 
-                    numquam quaerat eius deserunt possimus officia quod omnis!</p>
+                    <p>Me considero una persona apasionada de la informática y de la programación lógica. 
+                    Dispuesto siempre a aprender algo nuevo y con facilidad de adaptación. 
+                    Me gusta contribuir a que mi entorno de trabajo sea armonioso y descontracturado.</p>
                 }
-                <a href={cv} download><button>{languageEn ? 'Download CV' : 'Descargar CV'}</button></a>
             </div>
-
         </div>
+        <a href={cv} download><button className="but-cv">{languageEn ? 'Download CV' : 'Descargar CV'}</button></a>
     </div>
 }
 
