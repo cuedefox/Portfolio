@@ -2,7 +2,7 @@ import { React, useContext } from "react";
 import { Language } from "../contexts/Language";
 import avatar from '../assets/img/avatar-back.svg';
 import cv from '../assets/cv/Vergara-Rodrigo-cv.pdf';
-import cvEn from '../assets/cv/Rodrigo-Vergara-cv';
+import cvEn from '../assets/cv/Rodrigo-Vergara-cv.pdf';
 
 const AboutMe = () => {
     const {languageEn} = useContext(Language);
