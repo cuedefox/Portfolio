@@ -16,11 +16,22 @@ h1 {
     font-family: mon;
     margin: 1em;
     color: $color4;
-    span {
+    .title-color {
         background: -webkit-linear-gradient($color3, $color2);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+}
+
+.texting-container {
+    display: inline-block;
+}
+
+.texting {
+    overflow: hidden;
+    border-right: .15em solid;
+    white-space: nowrap;
+    animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
 }
 
 @media screen and (max-width:1000px) {
@@ -61,4 +72,14 @@ h1 {
         align-items: center;
         justify-content: center;
     }
+}
+
+@keyframes typing {
+    from { width: 0% }
+    to { width: 100% }
+}
+
+@keyframes blinking {
+    from { border-color: transparent }
+    to { border-color: $color3 }
   }
