@@ -107,8 +107,6 @@
         "medios"
         "mail"
         ;
-        align-items: center;
-        justify-content: center;
     }
     .mail {
         align-items: center;
@@ -120,6 +118,7 @@
     .medios-de-contacto {
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
     .titulo-contacto {
         h2 {

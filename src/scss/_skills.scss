@@ -103,3 +103,30 @@
         }
     }
 }
+
+@media screen and (max-width:600px) {
+    .skill {
+        margin: .7em;
+        img {
+            @include size(5em, 5em);
+        }
+        h5 {
+            margin: .5em;
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .skills-container {
+        flex-flow: column nowrap;
+    }
+    .skill {
+        margin: 1em;
+        img {
+            @include size(8em, 8em);
+        }
+        h5 {
+            margin: 1em;
+        }
+    }
+}
