@@ -1,0 +1,10 @@
+.but-whatsapp {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    @include size(60px, 60px);
+    transition: all 0.2s ease-in-out;
+    &:hover {
+    filter: brightness(1.75);
+    }
+}
