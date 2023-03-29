@@ -34,6 +34,17 @@ h1 {
     animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
 }
 
+@media screen and (min-width:1500px) {
+    header {
+        h1 {
+            font-size: 3em;
+        }
+        img {
+            @include size(25em, 25em);
+        }
+    }
+}
+
 @media screen and (max-width:1000px) {
     header {
         flex-flow: column nowrap;

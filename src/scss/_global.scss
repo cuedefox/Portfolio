@@ -9,11 +9,20 @@ $color1: #181818;
 $color2: #8758FF;
 $color3: #5CB8E4;
 $color4: #F2F2F2;
+$desktop: 1024px;
 
 @mixin size($ancho, $alto) {
     width: $ancho;
     height: $alto;
 }
+
+@mixin breakpoint($point) {
+    @if $point == desktop {
+        @media (min-width: $desktop) {
+            @content;
+        }
+    }
+}  
 
 @font-face {
     font-family: mon;
@@ -50,4 +59,22 @@ h5 {
 
 p {
     font-family: rob;
+}
+
+@media screen and (min-width:1500px) {
+    h2 {
+        font-size: 3.5em;
+    }
+    
+    h3 {
+        font-size: 2.7em;
+    }
+    
+    h4 {
+        font-size: 2.7em;
+    }
+    
+    h5 {
+        font-size: 1.4em;
+    }
 }
