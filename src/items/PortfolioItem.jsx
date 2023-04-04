@@ -6,9 +6,9 @@ const PortfolioItem = ({item}) => {
     const cargarImagen = require.context("../assets/img/portfolio", true);
 
     return <div className="portfolio-card" style={{ backgroundImage: `url(${cargarImagen(`./${item.img}`)})`}}>
-        <h3>{item.title}</h3>
-        <a href={item.link}>{languageEn ? 'See deploy' : 'Ver despliegue'}</a>
-        <a href={item.code}>{languageEn ? 'See code' : 'Ver codigo'}</a>
+        <h5>{item.title}</h5>
+        <a href={item.link} target="_blank" rel="noreferrer">{languageEn ? 'See deploy' : 'Ver despliegue'}</a>
+        <a href={item.code} target="_blank" rel="noreferrer">{languageEn ? 'See code' : 'Ver codigo'}</a>
     </div>
 }
 

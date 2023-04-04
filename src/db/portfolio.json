@@ -3,7 +3,7 @@
         "id": 1, 
         "title": "Ticoy", 
         "img": "ticoy.png",
-        "link": "",
-        "code": ""
+        "link": "https://ticoy.vercel.app/",
+        "code": "https://github.com/cuedefox/Ticoy"
     }
 ]

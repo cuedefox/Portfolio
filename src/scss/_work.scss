@@ -76,6 +76,29 @@
 	@extend .container-common;
 }
 
+.portfolio-card {
+	@include size(30em, 15em);
+	background-size: cover;
+	border-radius: 1em;
+	margin: 2em;
+	display: flex;
+	flex-flow: nowrap;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding: 1em;
+	a {
+		@extend .button-1;
+		background-color: $color4;
+		-webkit-box-shadow: 4px 4px 52px -8px rgba(0,0,0,0.64);
+		-moz-box-shadow: 4px 4px 52px -8px rgba(0,0,0,0.64);
+		box-shadow: 4px 4px 52px -8px rgba(0,0,0,0.64);
+	}
+	h5 {
+		font-size: 2em;
+		text-shadow: #000 1px 0 20px;
+	}
+}
+
 @media screen and (max-width: 858px) {
 	.services {
 		grid-template-areas: 
