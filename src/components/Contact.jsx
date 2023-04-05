@@ -53,7 +53,7 @@ const Contact = () => {
                     <p>{languageEn ? 'Cell phone' : 'Telefono Celular'}: <strong>+54 9 11 3241-7293</strong></p>
                     <p>Whatsapp: <strong>+54 9 11 6883-4237</strong></p>
                 </div>
-                <p>{languageEn ? 'If you want my services, do not hesitate to contact me.' : 'Si desea mis servicios, no dude en ponerse en contacto conmigo.'}</p>
+                <p className="frase-medios-de-contacto">{languageEn ? 'If you want my services, do not hesitate to contact me.' : 'Si desea mis servicios, no dude en ponerse en contacto conmigo.'}</p>
             </div>
         </div>
     </div>

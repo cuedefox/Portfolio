@@ -104,6 +104,7 @@ ul.show {
         @include size(100vw, calc(100% - 45px));
         background: $color2;
         top: -100vh;
+        left: 0;
         text-align: center;
         transition: all ease-in-out .4s;
         flex-direction: column;
@@ -135,7 +136,6 @@ ul.show {
         }
         .menu-items {
             overflow: scroll;
-            height: calc(100% - 65px);
         }
     }
 }

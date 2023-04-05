@@ -84,7 +84,6 @@
 }
 
 .medios-de-contacto {
-    width: 21em;
     grid-area: medios;
     display: flex;
     flex-flow: column nowrap;
@@ -98,6 +97,10 @@
         margin-bottom: 2em;
         margin-top: 1em;
     }
+}
+
+.frase-medios-de-contacto {
+    width: 21em;
 }
 
 @media screen and (max-width:1000px) {
