@@ -109,3 +109,29 @@
 		!important;
     }
 }
+
+@media screen and (max-width: 600px) {
+	.portfolio-card {
+		@include size(20em, 7em);
+		h5 {
+			font-size: 1.5em;
+			margin-bottom: 15px;
+		}
+		a {
+			transform: scale(70%);
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.service {
+		div {
+			img {
+				@include size(2em, 2em);
+			}
+			h5 {
+				font-size: 1em;
+			}
+		}
+	}
+}

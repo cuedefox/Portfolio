@@ -13,7 +13,7 @@ const NavBar = () => {
     const {languageEn, setLanguageEn} = useContext(Language);
 
     return <div className="nav-bar">
-        <div>
+        <div className="nav-bar-container">
             <p className="nav-logo">
                 <span>{'{'}</span>Rodrigo<span>:</span> Vergara<span>{'}'}</span>
             </p>
@@ -24,7 +24,7 @@ const NavBar = () => {
                     <li><a href="#skills">{languageEn ? 'Skills' : 'Habilidades'}</a></li>
                     <li><a href="#work">{languageEn ? 'Work' : 'Trabajo'}</a></li>
                     <li><a href="#contact">{languageEn ? 'Contact' : 'Contacto'}</a></li>
-                    <li className="li-idioma"><div onClick={() => {setLanguageEn(!languageEn)}}><img src={languageEn ? es : en} alt="boton idioma" /></div></li>
+                    <li className="li-idioma"><div className="language-img" onClick={() => {setLanguageEn(!languageEn)}}><img src={languageEn ? es : en} alt="boton idioma" /></div></li>
                 </ul>
                 <div className="menu-bars" onClick={desplegarMenu}>
                     <span className={mobileMenu ? "activelinea1-menu-bar" : "linea1-menu-bar"}></span>

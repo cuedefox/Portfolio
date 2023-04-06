@@ -69,3 +69,18 @@
         }
     }
 }
+
+@media screen and (max-width:500px) {
+    #about-me {
+        div {
+            div {
+                p {
+                    font-size: 1.1em;
+                }
+            }
+            img {
+                @include size(15em, 15em);
+            }
+        }
+    }
+}
