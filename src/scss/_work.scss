@@ -70,6 +70,7 @@
 		padding: 2em;
         font-size: 1.3em;
         color: $color4;
+		text-shadow: #000 1px 0 20px;
     }
 }
 
@@ -140,10 +141,12 @@
 		h5 {
 			font-size: 1.5em;
 			margin-bottom: 15px;
+			text-shadow: none;
 		}
 		a {
 			transform: scale(70%);
 			margin: 0.5em;
+			box-shadow: none;
 		}
 	}
 }
@@ -151,12 +154,16 @@
 @media screen and (max-width: 500px) {
 	.service {
 		div {
+			margin: 0;
 			img {
-				@include size(2em, 2em);
+				@include size(3em, 3em);
 			}
 			h5 {
-				font-size: 1em;
+				font-size: 1.5em;
 			}
+		}
+		p {
+			margin: 0;
 		}
 	}
 }

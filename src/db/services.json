@@ -3,32 +3,32 @@
         "id": 1, 
         "img": "code.svg", 
         "nameEs": "Programador web", 
-        "nameEn": "ingle", 
-        "desEs": "Diagramación profesional de Sitios Web. Programación HTML, XHTML, XML, CSS, Javascript, VBScript, ASP, PHP. Bases de Datos: SQL Server, MySQL, PostgreSQL, Access. Aplicaciones intranet, extranet y backoffice (panel de control).", 
-        "desEn": "ingle"
+        "nameEn": "Web Developer", 
+        "desEs": "Ofrezco servicios de desarrollo web utilizando el stack MERN (MongoDB, Express, React y Node.js). Si necesitas un sitio web o una aplicación con una interfaz de usuario dinámica y atractiva, puedo ayudarte a crearla utilizando estas tecnologías.", 
+        "desEn": "Hi there! I offer web development services using the MERN stack (MongoDB, Express, React, and Node.js). If you need a website or application with a dynamic and attractive user interface, I can help you create it using these technologies."
     },
     {  
         "id": 2, 
-        "img": "code.svg", 
-        "nameEs": "Programador web", 
-        "nameEn": "ingle", 
-        "desEs": "Diagramación profesional de Sitios Web. Programación HTML, XHTML, XML, CSS, Javascript, VBScript, ASP, PHP. Bases de Datos: SQL Server, MySQL, PostgreSQL, Access. Aplicaciones intranet, extranet y backoffice (panel de control).", 
-        "desEn": "ingle"
+        "img": "laptop.svg", 
+        "nameEs": "Diseño Responsive", 
+        "nameEn": "Responsive Design", 
+        "desEs": "Si necesitas un sitio web que se adapte a diferentes tamaños de pantalla, puedo ayudarte a crearlo. Trabajo con tecnologías modernas de diseño y desarrollo para crear sitios web con una interfaz de usuario atractiva y fácil de usar.", 
+        "desEn": "If you need a website that adapts to different screen sizes, I can help you create it. I work with modern design and development technologies to create websites with an attractive and user-friendly interface."
     },
     {  
         "id": 3, 
-        "img": "code.svg", 
-        "nameEs": "Programador web", 
-        "nameEn": "ingle", 
-        "desEs": "Diagramación profesional de Sitios Web. Programación HTML, XHTML, XML, CSS, Javascript, VBScript, ASP, PHP. Bases de Datos: SQL Server, MySQL, PostgreSQL, Access. Aplicaciones intranet, extranet y backoffice (panel de control).", 
-        "desEn": "ingle"
+        "img": "phone.svg", 
+        "nameEs": "Aplicaciones Moviles", 
+        "nameEn": "Mobile Aplications", 
+        "desEs": "Además de ofrecer servicios de desarrollo web, también puedo ayudarte a crear aplicaciones móviles utilizando React Native. Si necesitas una aplicación para iOS o Android, puedo ayudarte a crear una que se adapte a tus necesidades y presupuesto. Trabajo con tecnologías modernas y herramientas de desarrollo para crear aplicaciones con una interfaz de usuario intuitiva y atractiva.", 
+        "desEn": "In addition to offering web development services, I can also help you create mobile applications using React Native. If you need an app for iOS or Android, I can help you create one that fits your needs and budget. I work with modern technologies and development tools to create apps with an intuitive and attractive user interface."
     },
     {  
         "id": 4, 
-        "img": "code.svg", 
-        "nameEs": "Programador web", 
-        "nameEn": "ingle", 
-        "desEs": "Diagramación profesional de Sitios Web. Programación HTML, XHTML, XML, CSS, Javascript, VBScript, ASP, PHP. Bases de Datos: SQL Server, MySQL, PostgreSQL, Access. Aplicaciones intranet, extranet y backoffice (panel de control).", 
-        "desEn": "ingle"
+        "img": "cloud.svg", 
+        "nameEs": "Hosting", 
+        "nameEn": "Hosting", 
+        "desEs": "También tengo experiencia en alojamiento y hosting. He trabajado con proveedores de alojamiento y puedo ayudarte a elegir la mejor opción para tu sitio web o aplicación. Además, puedo ayudarte a configurar el alojamiento y asegurarme de que todo esté funcionando correctamente.", 
+        "desEn": "I also have experience in hosting and hosting providers. I have worked with hosting providers and can help you choose the best option for your website or application. Additionally, I can assist you in setting up hosting and ensuring everything is working properly."
     }
 ]

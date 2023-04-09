@@ -14,13 +14,22 @@ const AboutMe = () => {
             <div>
                 {
                     languageEn ? 
-                    <p>I consider myself a person who is passionate about computer science and logic programming.
-                    Always willing to learn something new and easily adaptable.
-                    I like to contribute to my work environment being harmonious and relaxed.</p>
+                    <p>
+                       Hello! I'm Carlos, a software developer who loves Star Wars. I enjoy working 
+                       with the MERN Stack and have worked on several exciting projects. I'm always 
+                       looking to learn new skills and techniques to improve my work. When I'm not 
+                       coding, I like to watch Star Wars movies, collect action figures, and play 
+                       video games inspired by the franchise. May the force be with you!
+                    </p>
                     :
-                    <p>Me considero una persona apasionada de la informática y de la programación lógica. 
-                    Dispuesto siempre a aprender algo nuevo y con facilidad de adaptación. 
-                    Me gusta contribuir a que mi entorno de trabajo sea armonioso y descontracturado.</p>
+                    <p>
+                        ¡Hola! Soy Rodrigo Vergara, un desarrollador de software que ama Star Wars. 
+                        Me encanta trabajar con el MERN Stack y he trabajado en varios proyectos 
+                        emocionantes. Siempre estoy buscando aprender nuevas habilidades y técnicas 
+                        para mejorar mi trabajo. Cuando no estoy programando, me gusta ver las 
+                        películas de Star Wars, coleccionar figuras de acción y jugar videojuegos 
+                        inspirados en la franquicia. ¡Que la fuerza te acompañe!
+                    </p>
                 }
             </div>
         </div>

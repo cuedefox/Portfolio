@@ -19,7 +19,7 @@
     align-items: center;
     justify-content: center;
     img {
-        @include size(8em, 8em);
+        @include size(7em, 7em);
     }
     h5 {
         margin: 1em;
@@ -76,6 +76,7 @@
 
 @media screen and (max-width:600px) {
     .skill {
+        @include size(6em, 6em);
         margin: .7em;
         img {
             @include size(5em, 5em);
@@ -87,16 +88,10 @@
 }
 
 @media screen and (max-width:425px) {
-    .skills-container {
-        flex-flow: column nowrap;
-    }
     .skill {
         margin: 1em;
-        img {
-            @include size(8em, 8em);
-        }
         h5 {
-            margin: 1em;
+            margin: .7em;
         }
     }
 }

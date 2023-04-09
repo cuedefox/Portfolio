@@ -5,6 +5,8 @@
     position: fixed;
     width: 100vw;
     z-index: 3;
+    display: grid;
+    align-items: center;
     .nav-bar-container {
         display: flex;
         justify-content: space-between;
@@ -31,7 +33,7 @@ nav {
         align-items: center;
         padding-right: 1em;
         li {
-            margin: 0em 1em;
+            margin: 0em .6em;
             a {
                 font-family: mon;
                 color: $color2;
@@ -142,7 +144,7 @@ ul.show {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1000px) {
     .nav-logo {
         font-size: 1.3em;
     }
