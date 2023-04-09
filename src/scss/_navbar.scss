@@ -113,7 +113,7 @@ ul.show {
         transition: all ease-in-out .4s;
         flex-direction: column;
         li {
-            margin: 20px 0 0 0;
+            margin: 0;
             line-height: 70px;
             &:hover {
                 background: none;
@@ -136,7 +136,7 @@ ul.show {
 @media screen and (max-width: 858px) and (orientation: landscape) {
     .menu-items {
         li {
-            margin: 5px 0 0 0;
+            line-height: 30px;
         }
         .menu-items {
             overflow: scroll;
