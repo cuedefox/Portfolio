@@ -19,11 +19,11 @@ const NavBar = () => {
             </p>
             <nav>
                 <ul className={mobileMenu ? "menu-items show" : "menu-items"}>
-                    <li><a href="#header">{languageEn ? 'Home' : 'Inicio'}</a></li>
-                    <li><a href="#about-me">{languageEn ? 'About Me' : 'Sobre Mi'}</a></li>
-                    <li><a href="#skills">{languageEn ? 'Skills' : 'Habilidades'}</a></li>
-                    <li><a href="#work">{languageEn ? 'Work' : 'Trabajo'}</a></li>
-                    <li><a href="#contact">{languageEn ? 'Contact' : 'Contacto'}</a></li>
+                    <li><a onClick={desplegarMenu} href="#header">{languageEn ? 'Home' : 'Inicio'}</a></li>
+                    <li><a onClick={desplegarMenu} href="#about-me">{languageEn ? 'About Me' : 'Sobre Mi'}</a></li>
+                    <li><a onClick={desplegarMenu} href="#skills">{languageEn ? 'Skills' : 'Habilidades'}</a></li>
+                    <li><a onClick={desplegarMenu} href="#work">{languageEn ? 'Work' : 'Trabajo'}</a></li>
+                    <li><a onClick={desplegarMenu} href="#contact">{languageEn ? 'Contact' : 'Contacto'}</a></li>
                     <li className="li-idioma"><div className="language-img" onClick={() => {setLanguageEn(!languageEn)}}><img src={languageEn ? es : en} alt="boton idioma" /></div></li>
                 </ul>
                 <div className="menu-bars" onClick={desplegarMenu}>

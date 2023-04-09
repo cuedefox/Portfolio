@@ -1,5 +1,5 @@
 #contact {
-    margin: 2em 0em;
+    padding: 4em 0em;
 }
 
 .contact-container {
@@ -15,7 +15,6 @@
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 1em;
     margin-bottom: 3em;
     p {
         color: $color3;
