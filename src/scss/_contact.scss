@@ -1,21 +1,22 @@
 #contact {
     margin: 2em 0em;
+}
+
+.contact-container {
     display: grid;
     grid-template-areas: 
-    "titulo titulo"
     "mail medios"
     ;
     justify-content: center;
-    align-items: flex-start;
 }
 
 .titulo-contacto {
     display: flex;
-    flex-flow: column;
-    grid-area: titulo;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    margin: 1em 1em 4em 1em;
+    margin-top: 1em;
+    margin-bottom: 3em;
     p {
         color: $color3;
         font-weight: bold;
@@ -103,19 +104,38 @@
     width: 21em;
 }
 
+.form-alert-err {
+    color: red;
+    font-weight: bold;
+}
+
+.form-alert-send {
+    color: green;
+    font-weight: bold;
+}
+
 @media screen and (max-width:1000px) {
-    #contact {
+    .contact-container {
         grid-template-areas: 
-        "titulo"
         "medios"
         "mail"
         ;
+        align-items: center;
+        justify-content: center;
     }
     .mail {
         align-items: center;
         justify-content: center;
         form {
             align-items: center;
+            input {
+                @include size(15em, 2em);
+            }
+            textarea {
+                @extend input;
+                height: 10em;
+                resize: none;
+            }
         }
     }
     .medios-de-contacto {
@@ -133,31 +153,6 @@
     }
 }
 
-.form-alert-err {
-    color: red;
-    font-weight: bold;
-}
-
-.form-alert-send {
-    color: green;
-    font-weight: bold;
-}
-
-@media screen and (max-width:1000px) {
-    .mail {
-        form {
-            input {
-                @include size(15em, 2em);
-            }
-            textarea {
-                @extend input;
-                height: 10em;
-                resize: none;
-            }
-        }
-    }
-}
-
 @media screen and (max-width:700px) {
     #contact {
         h3 {
@@ -165,13 +160,13 @@
         }
     }
     .titulo-contacto {
-        margin: 0;
-        margin-bottom: 4em;
+        width: 100vw;
+        margin-bottom: 1em;
         h2 {
-            font-size: 1.3em;
+            font-size: 1.2em;
         }
         p {
-            font-size: 1em
+            font-size: 1em;
         }
     }
 }

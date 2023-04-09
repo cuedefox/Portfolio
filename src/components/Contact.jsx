@@ -35,6 +35,7 @@ const Contact = () => {
             <h2>{languageEn ? 'Interested in my services?' : '¿Interesado en mis servicios?'}</h2>
             <p>{languageEn ? 'Send your inquiry' : 'Envie su consulta'}</p>
         </div>
+        <div className="contact-container">
         <div className="mail">
             <h3>{languageEn ? 'Send me a message' : 'Enviame un Mensaje'}</h3>
             <form ref={form} onSubmit={sendEmail}>
@@ -55,6 +56,7 @@ const Contact = () => {
                 </div>
                 <p className="frase-medios-de-contacto">{languageEn ? 'If you want my services, do not hesitate to contact me.' : 'Si desea mis servicios, no dude en ponerse en contacto conmigo.'}</p>
             </div>
+        </div>
         </div>
     </div>
 }

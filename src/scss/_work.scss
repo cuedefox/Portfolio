@@ -86,6 +86,9 @@
 	align-items: flex-end;
 	justify-content: space-between;
 	padding: 1em;
+	img {
+		display: none;
+	}
 	a {
 		@extend .button-1;
 		background-color: $color4;
@@ -112,13 +115,34 @@
 
 @media screen and (max-width: 600px) {
 	.portfolio-card {
-		@include size(20em, 7em);
+		background-image: none !important;
+		background: #FFF;
+		height: 22em;
+		margin: 1em;
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		justify-content: space-between;
+		border-radius: .5em;
+		overflow: hidden;
+		width: 15em;
+		padding: 0;
+		box-shadow: 0px 0px 29px -14px rgba(0,0,0,0.75);
+		-webkit-box-shadow: 0px 0px 29px -14px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 29px -14px rgba(0,0,0,0.75);
+		img {
+			display: block;
+			width: 15em;
+			top: 0;
+			width: 15em;
+		}
 		h5 {
 			font-size: 1.5em;
 			margin-bottom: 15px;
 		}
 		a {
 			transform: scale(70%);
+			margin: 0.5em;
 		}
 	}
 }
