@@ -11,7 +11,7 @@ const CertificateItem = ({item}) => {
         <div>
             <img src={cargarImagen(`./${item.institution}.png`)} alt={`Logo de ${item.institution}`} />
             <a href={item.link} target="_blank" rel="noreferrer">
-                <button>{languageEn ? 'See in web' : 'Ver en web'}</button>
+                <button>{languageEn ? 'View on web' : 'Ver en web'}</button>
             </a>
         </div>
     </div>
