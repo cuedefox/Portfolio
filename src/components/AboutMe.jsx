@@ -8,7 +8,7 @@ const AboutMe = () => {
     const {languageEn} = useContext(Language);
 
     return <div id="about-me">
-        <h2>{languageEn ? 'About Me' : 'Sobre Mi'}</h2>
+        <h2>{languageEn ? 'About Me' : 'Sobre Mí'}</h2>
         <div>
             <img src={avatar} alt="Dibujo De Rodrigo" />
             <div>

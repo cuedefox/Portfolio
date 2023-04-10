@@ -9,7 +9,7 @@ const PortfolioItem = ({item}) => {
         <img src={cargarImagen(`./${item.img}`)} alt={`imagen-de-${item.title}`} />
         <h5>{item.title}</h5>
         <a href={item.link} target="_blank" rel="noreferrer">{languageEn ? 'View deploy' : 'Ver despliegue'}</a>
-        <a href={item.code} target="_blank" rel="noreferrer">{languageEn ? 'View code' : 'Ver codigo'}</a>
+        <a href={item.code} target="_blank" rel="noreferrer">{languageEn ? 'View code' : 'Ver código'}</a>
     </div>
 }
 
