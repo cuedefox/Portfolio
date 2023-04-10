@@ -15,7 +15,7 @@ const AboutMe = () => {
                 {
                     languageEn ? 
                     <p>
-                       Hello! I'm Carlos, a software developer who loves Star Wars. I enjoy working 
+                       Hello! I'm Rodrigo Vergara, a software developer who loves Star Wars. I enjoy working 
                        with the MERN Stack and have worked on several exciting projects. I'm always 
                        looking to learn new skills and techniques to improve my work. When I'm not 
                        coding, I like to watch Star Wars movies, collect action figures, and play 
