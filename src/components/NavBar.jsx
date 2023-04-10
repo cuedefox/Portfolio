@@ -20,7 +20,7 @@ const NavBar = () => {
             <nav>
                 <ul className={mobileMenu ? "menu-items show" : "menu-items"}>
                     <li><a onClick={desplegarMenu} href="#header">{languageEn ? 'Home' : 'Inicio'}</a></li>
-                    <li><a onClick={desplegarMenu} href="#about-me">{languageEn ? 'About Me' : 'Sobre Mi'}</a></li>
+                    <li><a onClick={desplegarMenu} href="#about-me">{languageEn ? 'About Me' : 'Sobre Mí'}</a></li>
                     <li><a onClick={desplegarMenu} href="#skills">{languageEn ? 'Skills' : 'Habilidades'}</a></li>
                     <li><a onClick={desplegarMenu} href="#work">{languageEn ? 'Work' : 'Trabajo'}</a></li>
                     <li><a onClick={desplegarMenu} href="#contact">{languageEn ? 'Contact' : 'Contacto'}</a></li>
