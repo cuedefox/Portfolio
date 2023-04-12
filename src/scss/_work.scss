@@ -78,8 +78,15 @@
 	@extend .container-common;
 }
 
+.portfolio {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+}
+
 .portfolio-card {
-	@include size(28em, 13em);
+	@include size(25em, 12em);
 	background-size: cover;
 	border-radius: 1em;
 	margin: 2em;
@@ -88,6 +95,7 @@
 	align-items: flex-end;
 	justify-content: space-between;
 	padding: 1em;
+	position: relative;
 	img {
 		display: none;
 	}
@@ -99,7 +107,10 @@
 		box-shadow: 4px 4px 52px -8px rgba(0,0,0,0.64);
 	}
 	h5 {
-		font-size: 1.5em;
+		position: absolute;
+		top: 1em;
+		left: 1em;
+		font-size: 1.6em;
 		text-shadow: #000 1px 0 20px;
 	}
 }
@@ -139,6 +150,9 @@
 			width: 15em;
 		}
 		h5 {
+			position: relative;
+			top: 0;
+			left: 0;
 			font-size: 1.5em;
 			margin-bottom: 15px;
 			text-shadow: none;
