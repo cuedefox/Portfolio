@@ -5,5 +5,12 @@
         "img": "ticoy.png",
         "link": "https://ticoy.vercel.app/",
         "code": "https://github.com/cuedefox/Ticoy"
+    },
+    {
+        "id": 2, 
+        "title": "React Do It!", 
+        "img": "react-do-it.png",
+        "link": "https://react-do-it-ecru.vercel.app/",
+        "code": "https://github.com/cuedefox/react-do-it"
     }
 ]
