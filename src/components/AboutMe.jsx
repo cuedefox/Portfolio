@@ -23,7 +23,8 @@ const AboutMe = () => {
                     </p>
                     :
                     <p>
-                        ¡Hola! Soy Rodrigo Vergara, un desarrollador de software que ama Star Wars. 
+                        ¡Hola! Soy Rodrigo Vergara, un desarrollador de software que ama Star Wars.
+                        Actualmente estoy estudiando la carrera "ingenieria en desarrollo de software" en Jala University 
                         Me encanta trabajar con el MERN Stack y he trabajado en varios proyectos 
                         emocionantes. Siempre estoy buscando aprender nuevas habilidades y técnicas 
                         para mejorar mi trabajo. Cuando no estoy programando, me gusta ver las 
